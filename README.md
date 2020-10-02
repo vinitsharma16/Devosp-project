@@ -22,9 +22,6 @@ Table of Contents
 # Pipeline: GitHub
 The entry points for this plugin’s functionality are additional global variables, available to pipeline scripts when the plugin is enabled and the prerequisites are met.
 
-# License
-MIT
-
 # Prerequisites
 
 - Jenkins running Java 8 or higher.
@@ -40,7 +37,7 @@ Currently all operations against GitHub will be performed using the builds `GitH
 However you can override this in a pipeline script by calling `setCredentials(String userName, String password)` before any properties or methods are accessed/invoked on the `pullRequest` global variable.
 
 ```groovy
-pullRequest.setCredentials('John.Smith', 'qwerty4321')
+pullRequest.setCredentials('VinitSharma', '12345678')
 ```
 
 If you plan to use this plugin to add/modify/remove comments, labels, commit statuses etc. Please ensure that the required permissions are assigned to the token supplied in the credentials (`Scan Credentials` or `Manually` supplied).
